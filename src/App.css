@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.card-img{
+  background: #61dafb;
+  max-height: 165px;
+}
+
+.d-flex {
+  justify-content: center;
+}
+
+.app-subtitle{
+    margin-top: 50px;
+}
