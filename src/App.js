@@ -1,7 +1,9 @@
+import CuisinesList from "./components/CuisinesList"
+
 function App() {
   return (
     <div className="App">
-       Hello
+       <CuisinesList/>
     </div>
   );
 }
