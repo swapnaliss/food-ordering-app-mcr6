@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Button } from 'react-bootstrap';
 import { cuisineData, restaurantsData } from './Data';
+import { useNavigate } from 'react-router-dom';
 
 const CuisinesList = () => {
 
     const [selectedCuisine, setSelectedCuisine] = useState(null);
+    const navigate = useNavigate();
 
     const handleCuisineClick = (cuisine) => {
         console.log(cuisine)
@@ -40,7 +42,7 @@ const CuisinesList = () => {
                             </Card.Title>
                             {restaurant.menu.map((menuItem, index) => (
                                 <Col sm={6} md={4} lg={3} className="mb-3" key={index}>
-                                    <Card>
+                                    <Card onClick={() => navigate(`/restaurant/${restaurant.id}`)}>
                                         <Card.Img className='card-img' variant="top" src={menuItem.imgSrc} />
                                         <Card.Body>
                                             <Card.Text>Food: {menuItem.name}</Card.Text>

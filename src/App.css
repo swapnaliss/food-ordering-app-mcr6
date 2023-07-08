@@ -49,3 +49,15 @@
 .app-subtitle{
     margin-top: 50px;
 }
+
+.card-col{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.review-btn{
+  background-color: palevioletred;
+  color: white;
+  height: 50px;
+}
