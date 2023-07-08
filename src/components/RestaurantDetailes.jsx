@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { restaurantsData } from './Data';
-import { Container, Row, Col, Card, Image, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Image, Badge } from 'react-bootstrap';
 import { FaStar } from 'react-icons/fa';
 
 function RestaurantDetailPage() {
